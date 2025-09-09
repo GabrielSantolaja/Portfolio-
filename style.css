@@ -410,6 +410,125 @@ footer {
   100% { transform: scale(1); }
 }
 
+/* Página de Projetos */
+.mini-header {
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mini-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.mini-header h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  background: linear-gradient(to right, #fff, #e0e0e0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projects-page {
+  min-height: calc(100vh - 200px);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card .tech-stack {
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.new-project {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-project:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.new-project-content {
+  color: var(--light-text);
+}
+
+.new-project i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.new-project h3 {
+  margin-bottom: 0.5rem;
+  color: var(--light-text);
+}
+
+.new-project p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Ver Todos os Projetos Link */
+.view-all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.view-all-projects:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.view-all-projects i {
+  margin-left: 0.5rem;
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
   .profile-header {
